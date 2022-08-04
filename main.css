@@ -5,13 +5,16 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 footer{
+    margin-top: 3rem;
     padding: 3rem;
     background-color: black;
-    color: #0f5cec;
+    color: #ffffdf;
     text-align: center;
-    position: absolute;
-    width: 100%;
+    /* position:sticky; */
+    /* width: 93.3%; */
     bottom: 0px;
+    left: 0%;
+    right: 0%;
 }
 nav {
  padding: 1%; 
@@ -56,8 +59,66 @@ text-decoration: none;
     padding: 2rem;
     background-color: rgb(247, 243, 243);
     border-radius: 1em;
-}    
+    padding-bottom: 6rem;
+}  
+/* --------------------------------CARD------------------------------- */  
+.card{
+    width: 20rem; 
+    height:28rem;
+    margin:2rem 0rem;
+    /* border:1px solid grey; */
+    border-radius: 1rem;
+    background-color: antiquewhite;
+}
+.card-img,.card-des{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img img{
+    width: auto; 
+    height:10rem;
+    border-radius: 1rem;
+    
+} 
 
+.card-des-p{
+    display: block;
+}
+.card-btn{
+    color: #ffffff;
+    border: 0px;
+    border-radius: 1rem;
+    background-color: #0f5cec;
+    padding: 0.7rem 2rem ;
+   text-align: center;
+}
+/* --------------------------------ROW AND COL------------------------------- */  
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+/* --------------------------------SLIDER------------------------------- */  
+.sliders {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .all-slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .all-slide img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+  }
+ 
 /* --------------------------------MEDIA QUERIES------------------------------- */
 
  @media only screen and (max-width: 600px) {
@@ -70,13 +131,9 @@ text-decoration: none;
     color: azure;
     text-decoration: none;
     } 
-    footer{
-        padding: 3rem;
-        background-color: black;
-        color: #0f5cec;
-        text-align: center;
-        position: absolute;
-        width: 78.7%;
-        bottom: 0px;
+    .row{
+    grid-template-columns: 50px;
+
     }
+  
   }
