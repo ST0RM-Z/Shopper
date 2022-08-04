@@ -28,14 +28,27 @@ background-color: rgb(5, 120, 252);
     padding: 0px 1.2em; 
 color: azure;
 text-decoration: none;
+
+
+
 } 
 .li-nav a:hover{
     color: rgb(27, 30, 33);
+    transition: width 2s,transform 2s;
+
    
    } 
 .li-nav img{
     width: auto; 
     height:4rem;
+    transition: width 2s,transform 2s;
+
+} 
+.li-nav img:hover{
+    width: auto; 
+    /* height:4.4rem; */
+    /* transform: scale(1.2); */
+    transform:scale(1,1.2);
 } 
 .li-wrapper{
   padding-top: 1rem;
