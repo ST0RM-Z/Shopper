@@ -176,7 +176,7 @@ nav {
 .sliders .all-slide img {
     position: absolute;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
     height: auto;
     background: #000;
     -webkit-backface-visibility: hidden;
@@ -300,6 +300,14 @@ nav {
     .li-wrapper {
         padding: 0.2rem;
         float: inline-start;
+    }
+    .sliders {
+        display: flex;
+        align-items: flex-start;
+        background: #fff;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
     }
 
     .li-nav a {
